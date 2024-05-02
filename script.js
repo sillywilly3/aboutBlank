@@ -1,5 +1,5 @@
 (function () {
-    var url = "https://www.portalgames.org";
+    var url = "https://www.google.com/search?igu=1";
     var urlObj = new window.URL(window.location.href);
     win = window.open();
     win.document.body.style.margin = "0";
@@ -14,8 +14,6 @@
     iframe.src = url.toString();
     win.document.body.appendChild(iframe);
     var script = win.document.createElement("script");
-    script.src = "goTimed.js";
-    win.document.body.appendChild(script);
 
     setTimeout(function() {
       window.location.replace("https://www.classroom.google.com");
